@@ -1,0 +1,12 @@
+﻿{
+  "name": "sahabat-chat-agora-token-server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "agora-token": "2.0.6"
+  }
+}

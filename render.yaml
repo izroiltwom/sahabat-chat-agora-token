@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: sahabat-chat-agora-token
+    runtime: node
+    plan: free
+    rootDir: agora-token-server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
