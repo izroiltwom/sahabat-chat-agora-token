@@ -132,8 +132,12 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, "0.0.0.0", () => {
-  console.log(`Agora token server berjalan pada port ${PORT}`);
-  console.log(`Health check: http://localhost:${PORT}/health`);
-  console.log(`Token endpoint: http://localhost:${PORT}/issueAgoraRtcToken`);
-});
+if (require.main === module) {
+  server.listen(PORT, "0.0.0.0", () => {
+    console.log(`Agora token server berjalan pada port ${PORT}`);
+    console.log(`Health check: http://localhost:${PORT}/health`);
+    console.log(`Token endpoint: http://localhost:${PORT}/issueAgoraRtcToken`);
+  });
+} else {
+  module.exports = server;
+}
