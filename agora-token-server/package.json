@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "sahabat-chat-agora-token-server",
   "version": "1.0.0",
   "private": true,
@@ -10,4 +10,3 @@
     "agora-token": "2.0.6"
   }
 }
-
