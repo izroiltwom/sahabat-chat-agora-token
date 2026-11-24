@@ -2,9 +2,9 @@
 const { RtcTokenBuilder, RtcRole } = require("agora-token");
 
 const PORT = Number(process.env.PORT || 3000);
-const AGORA_APP_ID = String(process.env.AGORA_APP_ID || "").trim();
+const AGORA_APP_ID = String(process.env.AGORA_APP_ID || "3bdc7dcab0f14c5886406adadb4f76be").trim();
 const AGORA_APP_CERTIFICATE = String(
-  process.env.AGORA_APP_CERTIFICATE || ""
+  process.env.AGORA_APP_CERTIFICATE || "94cb8e4dd2be4480a6cc0d1a65b18858"
 ).trim();
 
 function sendJson(res, statusCode, data) {
